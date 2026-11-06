@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SalesSystem.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="fontName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">default</Value>
+    </Setting>
+    <Setting Name="fontSize" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">8.9</Value>
+    </Setting>
+    <Setting Name="fontBold" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="fontItalic" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="fontUnderline" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ThemName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Basic</Value>
+    </Setting>
+    <Setting Name="Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.</Value>
+    </Setting>
+    <Setting Name="DataBase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SalseDB</Value>
+    </Setting>
+    <Setting Name="Mode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mode</Value>
+    </Setting>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">db_a9c0c7_salsedb_admin</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">abdo112233@</Value>
+    </Setting>
+    <Setting Name="ScreenDisplay" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">English</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

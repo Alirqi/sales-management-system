@@ -1,0 +1,335 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C24D8A2-922E-43D2-90B8-B9665606CFC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SalesSystem</RootNamespace>
+    <AssemblyName>SalesSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraDiagram.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASSES\Checkups\ChickedEmpty.cs" />
+    <Compile Include="CLASSES\Checkups\Clear.cs" />
+    <Compile Include="CLASSES\Checkups\ReadOnleyText.cs" />
+    <Compile Include="CLASSES\DAL\DbInterfaceMediator\DatabaseManager.cs" />
+    <Compile Include="CLASSES\FormFunction\process.cs" />
+    <Compile Include="CLASSES\FormFunction\splashScreenManager.cs" />
+    <Compile Include="CLASSES\FormFunction\ViewForms.cs" />
+    <Compile Include="CLASSES\FormFunction\FormsSetup.cs" />
+    <Compile Include="CLASSES\Initialization\AppearanceTheme.cs" />
+    <Compile Include="CLASSES\Initialization\InvosPurchaseProduct.cs" />
+    <Compile Include="CLASSES\Initialization\LanguageSettings.cs" />
+    <Compile Include="CLASSES\Initialization\ServerSetting.cs" />
+    <Compile Include="CLASSES\Initialization\ScreenDisplay.cs" />
+    <Compile Include="CLASSES\Initialization\SystemInformation.cs" />
+    <Compile Include="CLASSES\Initialization\TreeOptions.cs" />
+    <Compile Include="CLASSES\Initialization\AppearanceFonts.cs" />
+    <Compile Include="CLASSES\Checkups\EnabledButtons.cs" />
+    <Compile Include="CLASSES\Setting\SetFonts.cs" />
+    <Compile Include="CLASSES\DAL\ConnectDB.cs" />
+    <Compile Include="CLASSES\SysNotification\Notification.cs" />
+    <Compile Include="CLASSES\Transfers.cs" />
+    <Compile Include="FR\For_BoundsTaking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_BoundsTaking.Designer.cs">
+      <DependentUpon>For_BoundsTaking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Boxes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Boxes.Designer.cs">
+      <DependentUpon>For_Boxes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Category.Designer.cs">
+      <DependentUpon>For_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Currency.Designer.cs">
+      <DependentUpon>For_Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Customers.Designer.cs">
+      <DependentUpon>For_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_ConnectDb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_ConnectDb.Designer.cs">
+      <DependentUpon>For_ConnectDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Login.Designer.cs">
+      <DependentUpon>For_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Main.Designer.cs">
+      <DependentUpon>For_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Mang_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Mang_Users.Designer.cs">
+      <DependentUpon>For_Mang_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Options.Designer.cs">
+      <DependentUpon>For_Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Pricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Pricing.designer.cs">
+      <DependentUpon>For_Pricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Purchase.Designer.cs">
+      <DependentUpon>For_Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_SplashScreen.Designer.cs">
+      <DependentUpon>For_SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Wait.Designer.cs">
+      <DependentUpon>For_Wait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Product.Designer.cs">
+      <DependentUpon>For_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Units.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Units.Designer.cs">
+      <DependentUpon>For_Units.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Stores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Stores.Designer.cs">
+      <DependentUpon>For_Stores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Supplier.designer.cs">
+      <DependentUpon>For_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FR\For_Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FR\For_Accounts.Designer.cs">
+      <DependentUpon>For_Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FR\For_BoundsTaking.resx">
+      <DependentUpon>For_BoundsTaking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Boxes.resx">
+      <DependentUpon>For_Boxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Category.resx">
+      <DependentUpon>For_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Currency.resx">
+      <DependentUpon>For_Currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Customers.resx">
+      <DependentUpon>For_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_ConnectDb.ar.resx">
+      <DependentUpon>For_ConnectDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_ConnectDb.resx">
+      <DependentUpon>For_ConnectDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Login.resx">
+      <DependentUpon>For_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Main.resx">
+      <DependentUpon>For_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Mang_Users.resx">
+      <DependentUpon>For_Mang_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Options.resx">
+      <DependentUpon>For_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Pricing.resx">
+      <DependentUpon>For_Pricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Purchase.resx">
+      <DependentUpon>For_Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_SplashScreen.resx">
+      <DependentUpon>For_SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Wait.resx">
+      <DependentUpon>For_Wait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Product.resx">
+      <DependentUpon>For_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Units.resx">
+      <DependentUpon>For_Units.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Stores.resx">
+      <DependentUpon>For_Stores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Supplier.resx">
+      <DependentUpon>For_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FR\For_Accounts.resx">
+      <DependentUpon>For_Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\cashing.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
